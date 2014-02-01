@@ -21,17 +21,19 @@ public class TreeTest {
 		
 		Tree tree = new Tree();
 
-		tree.addNode("bbb");
-		tree.addNode("aaa");
-		tree.addNode("ccc");
+		
 		tree.addNode("ddd");
+		tree.addNode("ccc");
 		tree.addNode("eee");
 		tree.addNode("fff");
 		tree.addNode("ggg");
 		tree.addNode("hhh");
-
-		String actual = tree.root.leftNode.leftNode.leftNode.word;
-		String expected = "hhh";
+		tree.addNode("aaa");
+		tree.addNode("bbb");
+		
+		
+		String actual = tree.root.word;
+		String expected = "aaa";
 		Assert.assertEquals("Values are not equal", expected, actual);
 		
 	}
